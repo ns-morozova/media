@@ -1,0 +1,158 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.inpmessage {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 25px;
+}
+
+.hiddenBlock {
+  max-height: 0;
+  overflow: hidden;
+  padding: 10px;
+  transition: max-height 0.5s ease-out;
+}
+
+.hiddenText {
+  max-height: fit-content;
+  overflow: hidden;
+  border: 1px solid #a8a5a5fa;
+  padding: 10px;
+  /* отступ внутри рамки */
+  margin-top: 10px;
+  /* отступ сверху */
+  opacity: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  position: relative;
+  background-color: #eeeeee;
+  width: 40vw;
+  height: 100vh;
+  margin: 0 0;
+}
+
+.containerChat {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: fit-content;
+  background-color: white;
+  /* position: relative; */
+}
+
+.chat {
+  opacity: 0;
+  z-index: 0;
+  background-color: white;
+  box-shadow: 3px 3px 30px 0px rgb(214, 214, 214);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity 0.1s linear;
+
+}
+
+.button {
+  background-color: #00a2ff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 24px;
+  /* увеличить ширину кнопки и добавить немного отступа сверху и снизу */
+  color: white;
+  cursor: pointer;
+  /* изменить курсор на указатель при наведении */
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #0081cc;
+}
+
+.round-button {
+  position: absolute;
+  /* Позволяет позиционировать кнопку относительно родителя */
+  bottom: 0;
+  /* Прижимает кнопку к нижней границе родителя */
+  right: 0;
+  /* Прижимает кнопку к правой границе родителя */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  /* делает кнопку круглой */
+  width: 60px;
+  height: 60px;
+  background-color: red;
+}
+
+.round-button:hover {
+  width: 70px;
+  height: 70px;
+}
+
+.close {
+  position: absolute;
+  /* Позволяет позиционировать кнопку относительно родителя */
+  top: 10px;
+  right: 20px;
+  border: none;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.welcome {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+#message {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  resize: none;
+  width: 80%;
+  height: 55%;
+  border-radius: 8px;
+  border-color: rgb(204, 204, 204);
+  font-size: 17px;
+}
+
+.btn-send {
+  position: absolute;
+  top: 290px;
+  left: 30px;
+  width: 82%;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
