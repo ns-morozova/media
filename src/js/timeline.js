@@ -13,7 +13,6 @@ export default class Timeline{
     onInputMessage(event) {
         event.preventDefault();
         const inpMess = this.element.querySelector('.inpmessage');
-        //const chat = this.element.querySelector('.containerChat');
         const chat = document.createElement('div');
         chat.classList.add('containerChat');
         const mess = new Message(chat);

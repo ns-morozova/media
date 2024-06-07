@@ -4,15 +4,12 @@ export default class Message {
     }
 
     init(message) {
-
         const date = this.getDateFormat(new Date);
-
         this.element.innerHTML = `
             <span>${date}</span>
             <span>${message}</span>
             <span>[51.50581,-0.12572]</span>
         `;
-
     }
 
     getDateFormat(date) {
@@ -25,7 +22,6 @@ export default class Message {
         let seconds = ("0" + date.getSeconds()).slice(-2);
 
         return day + "." + month + "." + year + " " + hours + ":" + minutes + ":" + seconds;
-
     }
 
 }

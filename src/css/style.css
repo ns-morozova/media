@@ -26,9 +26,7 @@ body {
   overflow: hidden;
   border: 1px solid #a8a5a5fa;
   padding: 10px;
-  /* отступ внутри рамки */
   margin-top: 10px;
-  /* отступ сверху */
   opacity: 1;
 }
 
@@ -54,7 +52,6 @@ body {
   width: 90%;
   height: fit-content;
   background-color: white;
-  /* position: relative; */
 }
 
 .chat {
@@ -76,10 +73,8 @@ body {
   border: none;
   border-radius: 5px;
   padding: 10px 24px;
-  /* увеличить ширину кнопки и добавить немного отступа сверху и снизу */
   color: white;
   cursor: pointer;
-  /* изменить курсор на указатель при наведении */
   font-size: 16px;
 }
 
@@ -89,11 +84,8 @@ body {
 
 .round-button {
   position: absolute;
-  /* Позволяет позиционировать кнопку относительно родителя */
   bottom: 0;
-  /* Прижимает кнопку к нижней границе родителя */
   right: 0;
-  /* Прижимает кнопку к правой границе родителя */
   border: none;
   color: white;
   text-align: center;
@@ -102,7 +94,6 @@ body {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 50%;
-  /* делает кнопку круглой */
   width: 60px;
   height: 60px;
   background-color: red;
@@ -115,7 +106,6 @@ body {
 
 .close {
   position: absolute;
-  /* Позволяет позиционировать кнопку относительно родителя */
   top: 10px;
   right: 20px;
   border: none;
