@@ -3,13 +3,16 @@ export default class Message {
         this.element = element;
     }
 
-    init(message) {
+    init(pos) {
         const date = this.getDateFormat(new Date);
         this.element.innerHTML = `
-            <span>${date}</span>
-            <span>${message}</span>
-            <span>[51.50581,-0.12572]</span>
+            <div style="display: flex; justify-content: flex-end;">
+                <span>${date}</span>
+            </div>
+            <span>${pos.message}</span>
+            <span>[${pos.long},${pos.lat}]</span>
         `;
+
     }
 
     getDateFormat(date) {
