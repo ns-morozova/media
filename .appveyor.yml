@@ -1,7 +1,7 @@
 image: Visual Studio 2019 # образ для сборки
 
 environment:
-  nodejs_version: "20"
+  nodejs_version: "18"
 
 branches:
   only:
@@ -21,7 +21,7 @@ build_script:
 
 test_script:
   - npm run lint && npm test
-  
+
 
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
